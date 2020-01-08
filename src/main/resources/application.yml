@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    database: mysql
+    show-sql: true
+    generate-ddl: true
+    open-in-view: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  datasource:
+    url: jdbc:mysql://192.168.244.88:8066/TESTDB
+    username: root
+    password: 123456
+    initialization-mode: always
+    sql-script-encoding: utf-8
